@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dog Lover Website</title>
+</head>
+<body>
+<h1>Edit Dog</h1>
+<form action="/edit_dog/{{ dog.id }}" method="post">
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" value="{{ dog.name }}"><br>
+<label for="age">Age:</label><br>
+<input type="number" id="age" name="age" value="{{ dog.age }}"><br>
+<label for="breed">Breed:</label><br>
+<input type="text" id="breed" name="breed" value="{{ dog.breed }}"><br>
+<label for="description">Description:</label><br>
+<textarea id="description" name="description">{{ dog.description }}</textarea><br><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
