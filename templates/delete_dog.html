@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dog Lover Website</title>
+</head>
+<body>
+<h1>Delete Dog</h1>
+<p>Are you sure you want to delete this dog?</p>
+<form action="/delete_dog/{{ dog.id }}" method="post">
+<input type="submit" value="Yes">
+<a href="/dogs">No</a>
+</form>
+</body>
+</html>
+
+
+I have also validated all the variable references and ensured that the HTML file names do not contain any special characters like "#" or "$".
