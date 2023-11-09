@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dog Lover Website</title>
+</head>
+<body>
+<h1>List of Dogs</h1>
+<ul>
+{% for dog in dogs %}
+<li>{{ dog.name }} ({{ dog.age }} years old, {{ dog.breed }})</li>
+{% endfor %}
+</ul>
+<p><a href="/add_dog">Click here</a> to add a new dog to the database.</p>
+</body>
+</html>
+
+
